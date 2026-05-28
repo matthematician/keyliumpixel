@@ -1,4 +1,7 @@
+import { registerSW } from 'virtual:pwa-register'
 import './style.css'
+
+registerSW({ immediate: true })
 
 document.querySelector('#app').innerHTML = `
   <main class="kiosk-screen">
